@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>animate实例</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width"/>
+<link href="animate.min.css" rel="stylesheet" type="text/css" />
+<script src="../../Script/jQuery/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#link1").click(function () {
+            $("#img1").removeClass().addClass("animated flipInY").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $(this).removeClass();
+            });
+            
+        });
+
+    });
+</script>
+</head>
+<body>
+<div class="g-doc">
+    <div class="g-hd">
+        <img src="1.jpg" alt="" id="img1"/>
+        <a href="#" id="link1">test</a>
+    </div>
+    <div class="g-bd">
+        <div class="g-mn">
+            
+        </div>
+        <div class="g-sd">
+            
+        </div>
+    </div>
+    <div class="g-ft">
+        
+    </div>
+</div>
+</body>
+</html>

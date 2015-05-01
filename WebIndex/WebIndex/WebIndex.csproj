@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10972E2D-3E6B-4F10-9F84-D6EAF92EB159}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebIndex</RootNamespace>
+    <AssemblyName>WebIndex</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppTheme\Alice\animate\animate-debug.css" />
+    <Content Include="AppTheme\Alice\animate\animate.css" />
+    <Content Include="AppTheme\Alice\base\base-debug.css" />
+    <Content Include="AppTheme\Alice\base\base.css" />
+    <Content Include="AppTheme\Alice\button-dropdown\button-dropdown-debug.css" />
+    <Content Include="AppTheme\Alice\button-dropdown\button-dropdown.css" />
+    <Content Include="AppTheme\Alice\button\button-debug.css" />
+    <Content Include="AppTheme\Alice\button\button.css" />
+    <Content Include="AppTheme\Alice\form\form-debug.css" />
+    <Content Include="AppTheme\Alice\form\form.css" />
+    <Content Include="AppTheme\Alice\grid\grid-debug.css" />
+    <Content Include="AppTheme\Alice\grid\grid.css" />
+    <Content Include="AppTheme\Alice\iconfont\iconfont-debug.css" />
+    <Content Include="AppTheme\Alice\iconfont\iconfont.css" />
+    <Content Include="AppTheme\Alice\list\list-debug.css" />
+    <Content Include="AppTheme\Alice\list\list.css" />
+    <Content Include="AppTheme\Alice\loading\loading-debug.css" />
+    <Content Include="AppTheme\Alice\loading\loading.css" />
+    <Content Include="AppTheme\Alice\nav\nav-debug.css" />
+    <Content Include="AppTheme\Alice\nav\nav.css" />
+    <Content Include="AppTheme\Alice\nico-alice\static\css\bg.gif" />
+    <Content Include="AppTheme\Alice\nico-alice\static\css\css-icon.png" />
+    <Content Include="AppTheme\Alice\nico-alice\static\css\favicon.ico" />
+    <Content Include="AppTheme\Alice\nico-alice\static\css\history-tags.png" />
+    <Content Include="AppTheme\Alice\nico-alice\static\css\normalize.css" />
+    <Content Include="AppTheme\Alice\nico-alice\static\css\site.css" />
+    <Content Include="AppTheme\Alice\nico-alice\static\css\solarized.css" />
+    <Content Include="AppTheme\Alice\nico-alice\static\js\html5shiv.js" />
+    <Content Include="AppTheme\Alice\nico-alice\static\js\site.js" />
+    <Content Include="AppTheme\Alice\nico-alice\templates\history.html" />
+    <Content Include="AppTheme\Alice\nico-alice\templates\iframe.html" />
+    <Content Include="AppTheme\Alice\nico-alice\templates\layout.html" />
+    <Content Include="AppTheme\Alice\nico-alice\templates\post.html" />
+    <Content Include="AppTheme\Alice\nico-alice\templates\snippet\foot.html" />
+    <Content Include="AppTheme\Alice\nico-alice\templates\snippet\head.html" />
+    <Content Include="AppTheme\Alice\one\one-debug.css" />
+    <Content Include="AppTheme\Alice\one\one.css" />
+    <Content Include="AppTheme\Alice\paging\paging-debug.css" />
+    <Content Include="AppTheme\Alice\paging\paging.css" />
+    <Content Include="AppTheme\Alice\poptip\poptip-debug.css" />
+    <Content Include="AppTheme\Alice\poptip\poptip.css" />
+    <Content Include="AppTheme\Alice\select\select-debug.css" />
+    <Content Include="AppTheme\Alice\select\select.css" />
+    <Content Include="AppTheme\Alice\step\step-debug.css" />
+    <Content Include="AppTheme\Alice\step\step.css" />
+    <Content Include="AppTheme\Alice\stylib\static\loading.gif" />
+    <Content Include="AppTheme\Alice\stylib\static\side.js" />
+    <Content Include="AppTheme\Alice\stylib\static\style.css" />
+    <Content Include="AppTheme\Alice\stylib\static\tomorrow.css" />
+    <Content Include="AppTheme\Alice\stylib\_templates\layout.html" />
+    <Content Include="AppTheme\Alice\table\table-debug.css" />
+    <Content Include="AppTheme\Alice\table\table.css" />
+    <Content Include="AppTheme\Alice\tipbox\tipbox-debug.css" />
+    <Content Include="AppTheme\Alice\tipbox\tipbox.css" />
+    <Content Include="AppTheme\Alice\tiptext\tiptext-debug.css" />
+    <Content Include="AppTheme\Alice\tiptext\tiptext.css" />
+    <Content Include="AppTheme\animate\1.jpg" />
+    <Content Include="AppTheme\animate\animate.css" />
+    <Content Include="AppTheme\animate\animate.min.css" />
+    <Content Include="AppTheme\animate\index.htm" />
+    <Content Include="AppTheme\ez-css-master\css\ez-filters-min.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez-filters.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez-min.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez-plug-filters-min.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez-plug-filters.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez-plug-min.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez-plug.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez-proto-min.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez-proto.css" />
+    <Content Include="AppTheme\ez-css-master\css\ez.css" />
+    <Content Include="AppTheme\ez-css-master\html\div\layout_1.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\layout_2.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\layout_3.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\module_2a.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\module_2b.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\module_3a.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\module_3b.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\module_4a.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\module_4b.txt" />
+    <Content Include="AppTheme\ez-css-master\html\div\plain_box.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\layout_1.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\layout_2.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\layout_3.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\module_2a.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\module_2b.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\module_3a.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\module_3b.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\module_4a.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\module_4b.txt" />
+    <Content Include="AppTheme\ez-css-master\html\fieldset\plain_box.txt" />
+    <Content Include="AppTheme\ez-css-master\licenses\BSD_License.txt" />
+    <Content Include="AppTheme\ez-css-master\licenses\MIT_License.txt" />
+    <Content Include="AppTheme\ez-css-master\starters\starter-2A.html" />
+    <Content Include="AppTheme\ez-css-master\starters\starter-2B.html" />
+    <Content Include="AppTheme\ez-css-master\starters\starter-2C.html" />
+    <Content Include="AppTheme\ez-css-master\starters\starter-3A.html" />
+    <Content Include="AppTheme\ez-css-master\starters\starter-3B.html" />
+    <Content Include="AppTheme\NEC\animation.css" />
+    <Content Include="AppTheme\NEC\function.css" />
+    <Content Include="AppTheme\NEC\media.css" />
+    <Content Include="AppTheme\NEC\nec.min.css" />
+    <Content Include="AppTheme\NEC\reset.css" />
+    <Content Include="AppTheme\NEC\template.html" />
+    <Content Include="AppTheme\webcont\css\base.css" />
+    <Content Include="AppTheme\webcont\css\common.css" />
+    <Content Include="AppTheme\webcont\css\freelancer\freelancer.css" />
+    <Content Include="AppTheme\webcont\css\global.min.css" />
+    <Content Include="AppTheme\webcont\css\index.css" />
+    <Content Include="AppTheme\webcont\css\page.css" />
+    <None Include="AppTheme\ez-css-master\README.md" />
+    <None Include="AppTheme\webcont\css\common.less" />
+    <None Include="AppTheme\webcont\css\index.less" />
+    <None Include="AppTheme\webcont\css\page.less" />
+    <Content Include="AppTheme\webcont\css\whole.css" />
+    <Content Include="AppTheme\webcont\global.css" />
+    <Content Include="AppTheme\webcont\image\freelancer\portfolio\cabin.png" />
+    <Content Include="AppTheme\webcont\image\freelancer\portfolio\cake.png" />
+    <Content Include="AppTheme\webcont\image\freelancer\portfolio\circus.png" />
+    <Content Include="AppTheme\webcont\image\freelancer\portfolio\game.png" />
+    <Content Include="AppTheme\webcont\image\freelancer\portfolio\safe.png" />
+    <Content Include="AppTheme\webcont\image\freelancer\portfolio\submarine.png" />
+    <Content Include="AppTheme\webcont\image\freelancer\profile.png" />
+    <Content Include="index.html" />
+    <Content Include="index2.htm" />
+    <Content Include="LESS\DEMO.htm" />
+    <Content Include="news.htm" />
+    <Content Include="newslist.htm" />
+    <Content Include="Script\Bootstrap\bootstrap\basic.htm" />
+    <Content Include="Script\Bootstrap\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Script\Bootstrap\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Script\Bootstrap\bootstrap\css\bootstrap.css" />
+    <Content Include="Script\Bootstrap\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Script\Bootstrap\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Script\Bootstrap\bootstrap\js\bootstrap.js" />
+    <Content Include="Script\Bootstrap\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Script\Bootstrap\bootstrap\js\html5shiv.min.js" />
+    <Content Include="Script\Bootstrap\bootstrap\js\npm.js" />
+    <Content Include="Script\Bootstrap\bootstrap\js\respond.min.js" />
+    <Content Include="Script\Bootstrap\font-awesome-4.3.0\css\font-awesome.css" />
+    <Content Include="Script\Bootstrap\font-awesome-4.3.0\css\font-awesome.min.css" />
+    <Content Include="Script\Bootstrap\font-awesome-4.3.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\ajax-loader.gif" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\action-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\action-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\alert-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\alert-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-d-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-d-l-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-d-l-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-d-r-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-d-r-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-d-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-l-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-l-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-r-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-r-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-u-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-u-l-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-u-l-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-u-r-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-u-r-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\arrow-u-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\audio-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\audio-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\back-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\back-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\bars-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\bars-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\bullets-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\bullets-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\calendar-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\calendar-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\camera-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\camera-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\carat-d-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\carat-d-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\carat-l-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\carat-l-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\carat-r-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\carat-r-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\carat-u-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\carat-u-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\check-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\check-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\clock-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\clock-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\cloud-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\cloud-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\comment-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\comment-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\delete-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\delete-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\edit-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\edit-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\eye-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\eye-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\forbidden-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\forbidden-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\forward-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\forward-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\gear-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\gear-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\grid-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\grid-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\heart-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\heart-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\home-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\home-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\info-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\info-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\location-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\location-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\lock-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\lock-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\mail-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\mail-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\minus-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\minus-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\navigation-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\navigation-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\phone-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\phone-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\plus-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\plus-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\power-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\power-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\recycle-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\recycle-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\refresh-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\refresh-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\search-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\search-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\shop-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\shop-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\star-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\star-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\tag-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\tag-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\user-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\user-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\video-black.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-png\video-white.png" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\action-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\action-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\alert-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\alert-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-d-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-d-l-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-d-l-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-d-r-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-d-r-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-d-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-l-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-l-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-r-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-r-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-u-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-u-l-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-u-l-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-u-r-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-u-r-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\arrow-u-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\audio-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\audio-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\back-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\back-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\bars-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\bars-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\bullets-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\bullets-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\calendar-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\calendar-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\camera-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\camera-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\carat-d-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\carat-d-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\carat-l-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\carat-l-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\carat-r-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\carat-r-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\carat-u-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\carat-u-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\check-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\check-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\clock-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\clock-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\cloud-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\cloud-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\comment-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\comment-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\delete-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\delete-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\edit-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\edit-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\eye-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\eye-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\forbidden-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\forbidden-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\forward-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\forward-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\gear-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\gear-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\grid-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\grid-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\heart-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\heart-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\home-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\home-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\info-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\info-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\location-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\location-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\lock-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\lock-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\mail-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\mail-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\minus-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\minus-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\navigation-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\navigation-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\phone-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\phone-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\plus-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\plus-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\power-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\power-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\recycle-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\recycle-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\refresh-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\refresh-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\search-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\search-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\shop-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\shop-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\star-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\star-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\tag-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\tag-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\user-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\user-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\video-black.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\images\icons-svg\video-white.svg" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile-1.4.5.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile-1.4.5.js" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile-1.4.5.min.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile-1.4.5.min.js" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.external-png-1.4.5.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.external-png-1.4.5.min.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.icons-1.4.5.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.icons-1.4.5.min.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.inline-png-1.4.5.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.inline-png-1.4.5.min.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.inline-svg-1.4.5.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.inline-svg-1.4.5.min.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.structure-1.4.5.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.structure-1.4.5.min.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.theme-1.4.5.css" />
+    <Content Include="Script\jquery.mobile-1.4.5\jquery.mobile.theme-1.4.5.min.css" />
+    <Content Include="Script\jQuery\fancyBox\.gitattributes" />
+    <Content Include="Script\jQuery\fancyBox\demo\1_b.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\1_s.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\2_b.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\2_s.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\3_b.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\3_s.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\4_b.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\4_s.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\5_b.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\5_s.jpg" />
+    <Content Include="Script\jQuery\fancyBox\demo\ajax.txt" />
+    <Content Include="Script\jQuery\fancyBox\demo\iframe.html" />
+    <Content Include="Script\jQuery\fancyBox\demo\index.html" />
+    <Content Include="Script\jQuery\fancyBox\lib\jquery-1.10.1.min.js" />
+    <Content Include="Script\jQuery\fancyBox\lib\jquery-1.9.0.min.js" />
+    <Content Include="Script\jQuery\fancyBox\lib\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="Script\jQuery\fancyBox\source\blank.gif" />
+    <Content Include="Script\jQuery\fancyBox\source\fancybox_loading%402x.gif" />
+    <Content Include="Script\jQuery\fancyBox\source\fancybox_loading.gif" />
+    <Content Include="Script\jQuery\fancyBox\source\fancybox_overlay.png" />
+    <Content Include="Script\jQuery\fancyBox\source\fancybox_sprite%402x.png" />
+    <Content Include="Script\jQuery\fancyBox\source\fancybox_sprite.png" />
+    <Content Include="Script\jQuery\fancyBox\source\helpers\fancybox_buttons.png" />
+    <Content Include="Script\jQuery\fancyBox\source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Script\jQuery\fancyBox\source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Script\jQuery\fancyBox\source\helpers\jquery.fancybox-media.js" />
+    <Content Include="Script\jQuery\fancyBox\source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Script\jQuery\fancyBox\source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Script\jQuery\fancyBox\source\jquery.fancybox.css" />
+    <Content Include="Script\jQuery\fancyBox\source\jquery.fancybox.js" />
+    <Content Include="Script\jQuery\fancyBox\source\jquery.fancybox.pack.js" />
+    <Content Include="Script\jQuery\jquery-1.11.0.min.js" />
+    <Content Include="Script\jQuery\jquery.buttons\css\buttons.css" />
+    <Content Include="Script\jQuery\jquery.buttons\css\main.css" />
+    <Content Include="Script\jQuery\jquery.buttons\css\prettify.css" />
+    <Content Include="Script\jQuery\jquery.buttons\js\buttons.js" />
+    <Content Include="Script\jQuery\jquery.buttons\js\main.js" />
+    <Content Include="Script\jQuery\jquery.buttons\js\vendor\html5shiv.js" />
+    <Content Include="Script\jQuery\jquery.buttons\js\vendor\jquery-1.9.1.min.js" />
+    <Content Include="Script\jQuery\jquery.buttons\js\vendor\scrollto.js" />
+    <Content Include="Script\jQuery\jquery.pin\jquery.pin.js" />
+    <Content Include="Script\jQuery\jquery.pin\jquery.pin.min.js" />
+    <Content Include="Script\jQuery\jquery.unslider\unslider.min.js" />
+    <None Include="Script\Bootstrap\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\fonts\fontawesome-webfont.eot" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\fonts\fontawesome-webfont.woff" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\fonts\FontAwesome.otf" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\animated.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\bordered-pulled.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\core.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\fixed-width.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\font-awesome.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\icons.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\larger.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\list.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\mixins.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\path.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\rotated-flipped.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\stacked.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\less\variables.less" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\font-awesome.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_animated.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_bordered-pulled.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_core.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_fixed-width.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_icons.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_larger.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_list.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_mixins.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_path.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_rotated-flipped.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_stacked.scss" />
+    <None Include="Script\Bootstrap\font-awesome-4.3.0\scss\_variables.scss" />
+    <None Include="Script\jquery.mobile-1.4.5\jquery.mobile-1.4.5.min.map" />
+    <None Include="Script\jQuery\fancyBox\CHANGELOG.md" />
+    <None Include="Script\jQuery\fancyBox\README.md" />
+    <None Include="Script\jQuery\fancyBox\sprite.psd" />
+    <None Include="Script\jQuery\SuperSlide2.1\demo\images\Thumbs.db" />
+    <None Include="Script\LESS\demo.less" />
+    <Content Include="Script\jQuery\SuperSlide2.1\default.css" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\1.0-switchTab.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\10.0-txtMarquee-top.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\11.0-nav.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\12.0-sideMenu.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\2.0-focus.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\3.0-picScroll-left.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\4.0-picScroll-top.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\5.0-picMarquee-left.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\6.0-picMarquee-top.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\7.0-txtScroll-left.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\8.0-txtScroll-top.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\9.0-txtMarquee-left.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\1.0-switchTab-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\10.0-txtMarquee-top-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\11.0-nav-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\12.0-sideMenu-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\2.0-focus-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\3.0-picScroll-left-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\4.0-picScroll-top-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\5.0-picMarquee-left-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\6.0-picMarquee-top-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\7.0-txtScroll-left-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\8.0-txtScroll-top-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\iframe\9.0-txtMarquee-left-iframe.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\arrow.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\blank.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\icoAdd.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\icoCircle.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\icoDown.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\icoLeft.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\icoRight.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\icoUp.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\loading.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\pic1.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\pic2.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\pic3.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\pic4.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\pic5.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\pic6.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\pic7.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\images\slider-arrow.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.1-multipleLine.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.1-multipleLine.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.2-multipleColumn.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.2-multipleColumn.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.3-targetCell.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.3-targetCell.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.4-SuperSlideGroup.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.4-SuperSlideGroup.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.5-onePage.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.5-onePage.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.6-doubleTab.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.6-doubleTab.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.7-TabMarquee.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.7-TabMarquee.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.8-picFocus.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\demo\T1.8-picFocus.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\arrow.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\autoPage.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\bg.jpg" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\blank.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\body.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\howPay.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\icoAdd.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\icoDown.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\icoLeft.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\icoRight.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\icoUp.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\indCircle.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\linde-white.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\loading.gif" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\multiLines-slide.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\new.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\titCell_mainCell.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\images\vis.png" />
+    <Content Include="Script\jQuery\SuperSlide2.1\jquery.SuperSlide.2.1.1.js" />
+    <Content Include="Script\jQuery\SuperSlide2.1\jquery.SuperSlide.2.1.1.source.js" />
+    <Content Include="Script\jQuery\SuperSlide2.1\jquery1.42.min.js" />
+    <Content Include="Script\jQuery\SuperSlide2.1\param.html" />
+    <Content Include="Script\jQuery\SuperSlide2.1\重要说明！.txt" />
+    <Content Include="Script\LESS\less-1.5.0.min.js" />
+    <Content Include="Script\LESS\less-1.7.0.min.js" />
+    <Content Include="Script\web\freelancer\cbpAnimatedHeader.js" />
+    <Content Include="Script\web\freelancer\cbpAnimatedHeader.min.js" />
+    <Content Include="Script\web\freelancer\classie.js" />
+    <Content Include="Script\web\freelancer\freelancer.js" />
+    <Content Include="Script\web\home.js" />
+    <Content Include="sd-admin\blank.html" />
+    <Content Include="sd-admin\buttons.html" />
+    <Content Include="sd-admin\css\bootstrap.css" />
+    <Content Include="sd-admin\css\bootstrap.min.css" />
+    <Content Include="sd-admin\css\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="sd-admin\css\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="sd-admin\css\plugins\social-buttons\social-buttons.css" />
+    <Content Include="sd-admin\css\plugins\timeline\timeline.css" />
+    <Content Include="sd-admin\css\sb-admin.css" />
+    <Content Include="sd-admin\flot.html" />
+    <Content Include="sd-admin\font-awesome\css\font-awesome.css" />
+    <Content Include="sd-admin\font-awesome\css\font-awesome.min.css" />
+    <Content Include="sd-admin\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="sd-admin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="sd-admin\forms.html" />
+    <Content Include="sd-admin\grid.html" />
+    <Content Include="sd-admin\index.html" />
+    <Content Include="sd-admin\js\bootstrap.js" />
+    <Content Include="sd-admin\js\bootstrap.min.js" />
+    <Content Include="sd-admin\js\demo\dashboard-demo.js" />
+    <Content Include="sd-admin\js\demo\flot-demo.js" />
+    <Content Include="sd-admin\js\demo\morris-demo.js" />
+    <Content Include="sd-admin\js\jquery-1.10.2.js" />
+    <Content Include="sd-admin\js\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="sd-admin\js\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="sd-admin\js\plugins\flot\excanvas.min.js" />
+    <Content Include="sd-admin\js\plugins\flot\jquery.flot.js" />
+    <Content Include="sd-admin\js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="sd-admin\js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="sd-admin\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="sd-admin\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="sd-admin\js\plugins\morris\morris.js" />
+    <Content Include="sd-admin\js\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="sd-admin\js\sb-admin.js" />
+    <Content Include="sd-admin\login.html" />
+    <Content Include="sd-admin\morris.html" />
+    <Content Include="sd-admin\notifications.html" />
+    <Content Include="sd-admin\panels-wells.html" />
+    <Content Include="sd-admin\tables.html" />
+    <Content Include="sd-admin\typography.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="sd-admin\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="sd-admin\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="sd-admin\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="sd-admin\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="sd-admin\font-awesome\less\bordered-pulled.less" />
+    <None Include="sd-admin\font-awesome\less\core.less" />
+    <None Include="sd-admin\font-awesome\less\fixed-width.less" />
+    <None Include="sd-admin\font-awesome\less\font-awesome.less" />
+    <None Include="sd-admin\font-awesome\less\icons.less" />
+    <None Include="sd-admin\font-awesome\less\larger.less" />
+    <None Include="sd-admin\font-awesome\less\list.less" />
+    <None Include="sd-admin\font-awesome\less\mixins.less" />
+    <None Include="sd-admin\font-awesome\less\path.less" />
+    <None Include="sd-admin\font-awesome\less\rotated-flipped.less" />
+    <None Include="sd-admin\font-awesome\less\spinning.less" />
+    <None Include="sd-admin\font-awesome\less\stacked.less" />
+    <None Include="sd-admin\font-awesome\less\variables.less" />
+    <None Include="sd-admin\font-awesome\scss\font-awesome.scss" />
+    <None Include="sd-admin\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="sd-admin\font-awesome\scss\_core.scss" />
+    <None Include="sd-admin\font-awesome\scss\_fixed-width.scss" />
+    <None Include="sd-admin\font-awesome\scss\_icons.scss" />
+    <None Include="sd-admin\font-awesome\scss\_larger.scss" />
+    <None Include="sd-admin\font-awesome\scss\_list.scss" />
+    <None Include="sd-admin\font-awesome\scss\_mixins.scss" />
+    <None Include="sd-admin\font-awesome\scss\_path.scss" />
+    <None Include="sd-admin\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="sd-admin\font-awesome\scss\_spinning.scss" />
+    <None Include="sd-admin\font-awesome\scss\_stacked.scss" />
+    <None Include="sd-admin\font-awesome\scss\_variables.scss" />
+    <None Include="sd-admin\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="sd-admin\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="sd-admin\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppTheme\webcont\image\common\" />
+    <Folder Include="AppTheme\webcont\image\index\" />
+    <Folder Include="AppTheme\webcont\image\page\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AppTheme\Alice\nico-alice\static\css\Actor.woff" />
+    <None Include="AppTheme\Alice\nico-alice\static\css\marcellus.woff" />
+    <None Include="Script\Bootstrap\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="Script\Bootstrap\bootstrap\css\bootstrap.css.map" />
+    <None Include="Script\Bootstrap\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Script\Bootstrap\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Script\Bootstrap\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5166</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
